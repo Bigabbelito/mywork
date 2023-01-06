@@ -12,163 +12,53 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">    <title>Booking</title>
 </head>
-<body>
-
-
-<!-- navbar -->
-
-<header>
-    <div id="logo">
-        <h1>Dev.World</h1>
-    </div>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="/firstside/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/speakers/speakers.html">Speakers</a>
-            </li>
-            <li>
-                <a href="/sponsers/sponsers.html">Sponsars</a>
-            </li>
-            <li>
-                <a href="/Booking/booking.html">Booking</a>
-            </li>
-            <li>
-                <a href="/contactus/contact.html">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-
-     <!-- main -->
-
-    <div class="container">
-        <div class="container-time">
-            <h2 class="heading">Our Programs</h2>
-            <h3 class="heading-days">9-12</h3>
-            <p>9:00am - 9:45am (Breakfast Meeting)</p>
-            <p>9:00am - 9:45am (Breakfast Meeting)</p>
-            <p>9:00am - 9:45am (Breakfast Meeting)</p>
-            <p>12:00pm - 13:45pm (Launch Break</p>
-            <p>9:00am - 9:45am (Breakfast Meeting)</p>
-
-            <h3 class="heading-days">10-12</h3>
-            <p>9:00am - 9:45am (Breakfast Meeting)</p>
-            <p>10:00am - 11:30am (VUe- Seminer)</p>           
-             <p>13:30am - 14:30pm (SWIFT- Seminer)</p>
-             <p>13:30am - 14:30pm (Launch)</p>
-            <p>12:00am - 13:30m (ANGULAR- Seminer)</p>
-
-            <h3 class="heading-days">11-12</h3>
-            <p>9:00am - 9:45am (Breakfast Meeting)</p>
-            <p>10:00am - 11:30am (PYTHON- Seminer)</p>
-            <p>12:00am - 13:30m (UX/UI- Seminer)</p>
-            <p>12:00am - 13:30m (CSS- Seminer)</p>
-
-            <hr>
-
-            <h4 class="heading-phone">Call Us: (+46) 736 76 75 79</h4>
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span><img src="/Booking/img/art-1.png" alt=""></span>Book Now <span><img src="/Booking/img/art-1.png" alt=""></span></h1>
+            <p>You can </p>
         </div>
-
-        <div class="container-form">
-            <form action="#"> 
-                <h2 class="heading heading-yellow">Reservation Online</h2>
-
-                <div class="form-field">
-                    <p>Your Name</p>
-                    <input type="text" placeholder="Your Name">
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Your full name ?</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
                 </div>
-                <div class="form-field">
-                    <p>Your Email</p>
-                    <input type="text" placeholder="Your Email">
+                <div>
+                    <span>Your email address ?</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
                 </div>
-                <div class="form-field">
-                    <p>Date</p>
-                    <input type="date">
-                </div>
-                <div class="form-field">
-                    <p>Time</p>
-                    <input type="time">
-                </div>
-                <div class="form-field">
-                    <p>How many people</p>
-                    <select name="select" id="#">
-                        <option value="1">1 person</option>
-                        <option value="2">2 persons</option>
-                        <option value="3">3 persons</option>
-                        <option value="4">4 persons</option>
-                        <option value="5">5 persons</option>
-                        <option value="5+">5+ persons</option>
+                <div>
+                    <!-- <---this is the select option--->
+                    <span>How many people ?</span>
+                    <select name="people" id="people" required>
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
                     </select>
+                    <!-- <---this is the select option--->
                 </div>
-                <button class="btn">SUBMIT</button>
+                <div>
+                    <span>What time ?</span>
+                    <input type="text" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>What is the date ?</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Your phone number ?</span>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                <div id="submit">
+                   <a href="/firstside/index.html"> <input type="submit" value="SUBMIT" id="submit"></a>
+                </div>
+
+
             </form>
         </div>
     </div>
-    <!-- end main -->
-    <!-- footer -->
-    
-
-    <footer>
-        <div class="container1">
-            <div class="sec aboutus">
-                <h2>About Us</h2>
-                <p>Vi är ett företag som tar hand konferensen och seminarier</p>
-                       <ul class="sci">
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
-                       </ul>
-            </div>
-            <div class="sec quicklinks">
-                <h2>Quck Links</h2>
-                <ul>
-                    <li><a href="/firstside/index.html">Home</a></li>
-                    <li><a href="/speakers/speakers.html">Speakers</a></li>
-                    <li><a href="/sponsers/sponsers.html">Sponsars</a></li>
-                    <li><a href="/Booking/booking.html">Booking</a></li>
-                    <li><a href="/contactus/contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="sec quicklinks">
-                <h2>Offices</h2>
-                <ul>
-                    <li><a href="">Stockholm</a></li>
-                    <li><a href="">Malmö</a></li>
-                    <li><a href="">Lund</a></li>
-                    <li><a href="">Göteborg</a></li>
-                    <li><a href="">Karlstad</a></li>
-                </ul>
-            </div>
-            <div class="sec contact">
-                <h2>Contact Us</h2>
-                <ul class="info">
-                 <li>
-                    <span><i class="fa fa-map-marker-alt" aria-hidden="true"></i></span>
-                    <span>Karlstadsvägen 45 <br>
-                    Karlstad 652 44 <br>Sweden</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <p><a href="tel +46 540 450 66 77">+46 540 450 66 77</a><br>
-                        <a href="tel +46 540 450 66 77">+46 540 450 66 77</a></p>
-                </li>
-                <li>
-                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                    <p><a href="mailto Dev.world@karlstad.nu">Dev.world@karlstad.nu</a></p>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <div class="copyrightText">
-        <p>Copyright c 2022 Abbe. All Rights Reserved.</p>
-    </div>
-    
 </body>
 </html>
