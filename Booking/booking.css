@@ -8,12 +8,10 @@
 .main_bg{
     background-color: #2c3e50;
     width: 100%;
-    /* max-width: 1200px; */
     height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
 }
 .form{
     width: 650px;
@@ -26,14 +24,14 @@
     border-left: 0;
     border-bottom: 0;
 
-  }
-  .user-details .main-form .input-box input:valid{
+}
+.user-details .main-form .input-box input:valid{
     border-color: green;
     border-width: 0.6em;
     border-top: 0;
     border-left: 0;
     border-bottom: 0;
-  }
+}
 
 .form-text{
     text-align: center;
@@ -91,22 +89,23 @@
 }
 
 .btn{
-    font-family: sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  background: #c5bd21;
-  width: 160px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  border-radius: 5px;
-  cursor: pointer;
+    display: flex;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffca00;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .btn:hover{
     font-family: 'Akaya Telivigala', cursive;
-    width: 200px;
+    width: 100px;
     background-color: black;
     color: #fff ;
 }
@@ -116,7 +115,56 @@
     color: #fff;
 }
 
+.text-wishes{
+    font-family: 'Akaya Telivigala', cursive;
+    color: #fff;
+    margin-bottom: 8px;
+  
+  }
+  
+  .wrapper{
+    display: inline-block;
+    justify-content: start;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  textarea{
+    font-size: 14px;
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    padding-top: 3px;
+    padding-left: 3px;
+    font-family: 'poppin', sans-serif;
+    
+  }
+  #yes:checked + textarea{
+    visibility: visible;
+    display:inline-block;
+  }
+  
+  .choise{
+  margin-right: 1em;
+  }
+  
+  #nej:checked + textarea {
+    visibility: visible;
+  }
 
+  .header-wishes{
+	margin-bottom: 1em;
+	background-color: #ffca00;
+	color: #1B2A41;
+	text-align: center;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+  }
 @media screen and (max-width:710px) {
     .main-form{
         text-align: center;

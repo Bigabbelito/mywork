@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="booking.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==
-     " crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==
+    " crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">    <title>Booking</title>
 </head>
@@ -36,35 +36,49 @@
                 </div>
                 <div class="input-box">
                     <!-- <---this is the select option--->
-                    <span>How many people ?</span>
+                    <span>What Time ?</span>
                     <select name="people" id="people" required>
-                        <option value=""><---People---></option>
-                        <option value="1">1 People</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4">4 People</option>
+                        <option value="1">Pick a day</option>
+                        <option value="Day1">09/12</option>
+                        <option value="Day2">10/12</option>
+                        <option value="Day3">11/12</option>
                     </select>
                     <!-- <---this is the select option--->
                 </div>
                 <div class="input-box">
-                    <span>What time ?</span>
-                    
-                    <input type="text" name="time" id="time" placeholder="Time" required>
-                </div>
-                <div class="input-box">
-                    <span>What is the date ?</span>
-                    <input type="date" name="date" id="date" placeholder="date" required>
+                    <span>Which conference you are interested for?</span>
+                    <select name="people" id="people" required>
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">JAVASCRIPT</option>
+                        <option value="">REACT.JS</option>
+                        <option value="">PYTHON</option>
+                        <option value="">UX/UI</option>
+                        <option value="">VUE</option>
+                        <option value="">SWIFT</option>
+                        <option value="">ANGULAR</option>
+                        <option value="">JSON</option>
+                    </select>
                 </div>
                 <div class="input-box"> 
                     <span>Your phone number ?</span>
                     <input type="number" name="number" id="number" placeholder="Write your number here..." required>
                 </div>
             </div>
+                
+
+                <div class="wrapper">
+                    <p class="text-wishes header-wishes">An incredibly good buffet with, among other things, Swedish and Asian dishes will be offered, vegetarian options will be available.</p>
+                    <p class="text-wishes"> <label for="wishes">Special food or allergic to something? (If not, you can move on)</label></p>
+                    <label class="yes" for="yes">Yes</label>
+                    <input class="choise" id="yes" name="yes" type="checkbox" > 
+                    
+                    <textarea name="wishes" id="wishes" cols="40" rows="10" placeholder="Here you can write if you want us to know something in advance, e.g. that you are lactose intolerant."></textarea>
+
                 <div id="submit">
-                   <a href="/firstside/index.html" class="btn">submit</a>
+                <a href="/firstside/index.html" class="btn">Continue</a>
                 </div>
-
-
+                </div> 
             </form>
         </div>
     </div>
